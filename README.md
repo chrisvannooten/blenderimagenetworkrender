@@ -31,6 +31,8 @@ The auto calculate percentage currently just divides up any remaining percentage
 
 After you have set your servers up you simply press the 'Render File' button, I have noticed on Windows the program says not responding but after 3 minutes I still got the BMW benchmark in its entirety.
 
+To run the server from this addon use the command bpy.ops.object.render_server()
+
 ### Notes
 
 Using Wifi is disadviced especially for larger projects as it will affect total render time. 
