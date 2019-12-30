@@ -3,11 +3,11 @@
 
 ### Introduction
 
-As my Final Work for school I made blender single image network render as I found other implementations lacking. I have been able to run the addon on both Windows and Linux (as I do not own a Mac or Hackintosh I have not been able to test it for that platform), using 2 HP Zbooks I was able to consistently cut the render time in half each time for the BMW and Classroom benchmarks.
+As my Final Work for school I made blender single image network render as I found other implementations lacking. I have been able to run the addon on both Windows and Linux (as I do not own a Mac or Hackintosh I have not been able to test it for that platform), using 2 HP Zbooks running Ubuntu 18.04 I was able to consistently cut the render time in half each time for the BMW and Classroom benchmarks.
 
 ### Prerequisites
 
-In order to use the sender addon you first need to get the PIL python module installed for blender, there is also a reciever addon that is used simply for machines that serve as renderers.
+In order to use the sender addon you first need to get the PIL python module installed for blender, there is also [a reciever addon](https://github.com/chrisvannooten/blendernetworkimagereciever) that is used simply for machines that serve as renderers.
 
 First check in the Python console of Blender (NOT YOUR OS!), what version of Python is being used.
 After you have your Python version download [the PIL module from pypi](https://pypi.org/project/Pillow/#files) corresponding to your Python version and OS e.g.(Pillow=6.2.1-cp37-cp37m-win\_amd64.whl for Windows 10 64bit with Blender 2.81a).
@@ -16,7 +16,7 @@ Extract the Pillow.whl file in the 'modules' folder using a program like winrar.
 Then in Blender open Preferences go to File path (lowest tab on the left) and set the Scripts folder to the folder where the 'modules' folder resides, open and close Blender just to be sure it takes effect.
 After all that you can install the addon which should be the files in this repository in a zip.
 
-If you want to simply use the machine as rendermachine download the Network Render Receiver instead.
+If you want to simply use the machine as rendermachine download [the Network Render Receiver](https://github.com/chrisvannooten/blendernetworkimagereciever) instead.
 It doesn't need the PIL library in order to function.
 
 ### Usage
