@@ -97,7 +97,7 @@ class RenderServer(bpy.types.Operator):
 	def __del__(self):
 		print("Render Server ended")
 
-	def execute(self,context,event):
+	def execute(self,context):
 		socket1=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 		socket1.bind(('',65432))
 		socket1.listen()
